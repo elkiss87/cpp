@@ -1,0 +1,27 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+Debug/
+Release/
+x64/
+x86/
+*.exe
+*.dll
+*.lib
+*.pdb
+
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# Others
+*.ipch
+*.db
+*.opendb
+*.VC.db
