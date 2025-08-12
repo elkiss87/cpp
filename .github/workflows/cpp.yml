@@ -11,9 +11,9 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Configure
-        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
-      - name: Build
-        run: cmake --build build --config Release
+      - name: Setup MSVC
+        uses: ilammy/msvc-dev-cmd@v1
+      - name: Build with MSBuild
+        run: msbuild Server.sln /p:Configuration=Release /p:Platform=x64
       - name: List build output
-        run: dir build\Release
+        run: dir "Server\x64\Release"
