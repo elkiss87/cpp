@@ -8,3 +8,6 @@
 Repo → Settings → Actions → General
 Workflow permissions: Read and write permissions로 변경
 ```
+
+# License
+MIT
